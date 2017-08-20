@@ -2,8 +2,11 @@ group 'com.twospoons'
 version '1.0-SNAPSHOT'
 
 buildscript {
-    ext.kotlin_version = '1.1.4-2'
-    ext.spring_boot_version = '2.0.0.M3'
+    ext {
+        kotlin_version = '1.1.4-2'
+        spring_boot_version = '1.5.6.RELEASE'
+        camel_version = '2.19.2'
+    }
 
     repositories {
         jcenter()
@@ -35,6 +38,9 @@ dependencies {
     compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     compile "org.jetbrains.kotlin:kotlin-reflect:$kotlin_version"
     compile 'org.springframework.boot:spring-boot-starter-web'
+
+    compile "org.apache.camel:camel-spring-boot:$camel_version"
+    compile "org.apache.camel:camel-test-spring:$camel_version"
 
     compile 'io.github.microutils:kotlin-logging:1.4.6'
 

@@ -3,7 +3,7 @@ package com.twospoons.camel.kotlin.service
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.InjectMocks
-import org.mockito.junit.MockitoJUnitRunner
+import org.mockito.runners.MockitoJUnitRunner
 import kotlin.test.assertEquals
 import kotlin.test.assertNotNull
 
