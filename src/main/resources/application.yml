@@ -1,0 +1,4 @@
+logging:
+  level:
+    ROOT: INFO
+    com.twospoons.camel.kotlin: DEBUG
